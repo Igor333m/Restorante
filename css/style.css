@@ -1,0 +1,89 @@
+.navbar-fixed-top > .container-fluid {
+	background-color: #A7A37E;
+
+}
+.navbar-header button, .navbar-brand, #mainNavbar,
+ .dropdown-menu a, .navbar-nav a {
+	color: #002F2F !important;
+} 
+
+.blueColor{
+	color:#A7A37E !important;
+	text-shadow:#474747 2px 2px 4px;
+
+}
+.borderRadius{
+		border-radius: 25px;
+    /*padding: 20px; */
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+.container {
+	/*border: solid red 2px;*/
+}
+
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.row-content {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.row-content-breadcrumbs{
+	padding-top: 10px;
+
+}
+
+.row-footer {
+	color: #fff;
+	background-color: #046380;
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+	
+}
+
+.jumbotron {
+	padding: 45px 30px 70px 30px;
+	margin: 40px auto 0px auto;
+	background-color: #046380;
+	color: #FFFAF0;
+}
+
+footer address {
+	font-size: 80%;
+	margin: 0px;
+	color: #EFECCA;
+}
+.navbar-header button {
+	color:#7986cb;
+}
+.row-footer .list-unstyled li a, footer address a {
+	color: #EFECCA;
+}
+
+#test {
+	border: solid red 1px;
+}
+
+#test2 {
+	border: solid blue 1px;
+}
+
+/* PARALLAX*/
+
+.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallaxPic {
+   background-image: url("../img/food.jpg");
+}
