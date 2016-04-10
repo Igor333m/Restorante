@@ -87,3 +87,7 @@ footer address {
 .parallaxPic {
    background-image: url("../img/food.jpg");
 }
+
+.center{
+	text-align: center;
+}
