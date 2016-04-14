@@ -24,7 +24,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
     <header>
         <!-- Main component for a primary marketing message or call to action -->
         <nav class="navbar-fixed-top navbar-default" role="navigation">
@@ -95,212 +95,224 @@
             </div>
         </div>
     </header>
-
     <div class="container">
             <!-- Breadcrumbs -->
-            <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">About Us</li>
-            </ol>
-        <div>
-            <div>
+        <div class="row row-content-breadcrumbs">
+            <div class="col-xs-12">
+                <!-- Breadcrumbs -->
+                <ol class="breadcrumb">
+                    <li class="active">Home</li>
+                </ol>
+            </div>
+            <div class="col-xs-12">
                <h3>About Us</h3>
                <hr>
             </div>
         </div>
-        
-        <div class="row row-content">
-            <section class="col-xs-12 col-sm-7 col-lg-9">
-                <h2>Our History</h2>
-                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
-                <div class="well">
-                    <blockquote>
-                        <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                        <footer>Alberto Somayya, <cite title="The Wit and Wisdom of Alberto"> The Wit and Wisdom of Alberto, Food Books, 2012</cite></footer>
-                    </blockquote>
-                </div>
-            </section>
-            <!-- Class well is used for light background! -->
-                
-            <aside class="col-xs-12 col-sm-5 col-lg-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Facts at glance</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-condensed">
-                                <tr>
-                                    <th>Started</th>
-                                    <td>03.02.2013.</td>
-                                </tr>
-                                 <tr>
-                                    <th>CEO</th>
-                                    <td>Peter Pan</td>
-                                </tr>
-                                <tr>
-                                    <th>Major Stake Holder</th>
-                                    <td>HK Fine Foods Inc.</td>
-                                </tr>
-                                <tr>
-                                    <th>Last year's Turnover</th>
-                                    <td>$1.250.000</td>
-                                </tr>
-                                <tr>
-                                    <th>Employers</th>
-                                    <td>40</td>
-                                </tr>
-                            </table>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10">
+                <div class="row row-content" id="history">
+                    <section class="col-xs-12 col-sm-7 col-lg-9">
+                        <h2>Our History</h2>
+                        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                        <div class="well">
+                            <blockquote>
+                                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                                <footer>Alberto Somayya, <cite title="The Wit and Wisdom of Alberto"> The Wit and Wisdom of Alberto, Food Books, 2012</cite></footer>
+                            </blockquote>
+                        </div>
+                    </section>
+                    <!-- Class well is used for light background! -->
+                        
+                    <aside class="col-xs-12 col-sm-5 col-lg-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Facts at glance</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-condensed">
+                                        <tr>
+                                            <th>Started</th>
+                                            <td>03.02.2013.</td>
+                                        </tr>
+                                         <tr>
+                                            <th>CEO</th>
+                                            <td>Peter Pan</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Major Stake Holder</th>
+                                            <td>HK Fine Foods Inc.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Last year's Turnover</th>
+                                            <td>$1.250.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Employers</th>
+                                            <td>40</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="row">
+                        <div class="col-xs-12">
+                        
                         </div>
                     </div>
+                    <div>
+                        <p style="padding:20px;"></p>
+                    </div>
                 </div>
-            </aside>
-            <div class="row">
-                <div class="col-xs-12">
-                
+
+
+                <div class="row row-content" id="corporate">
+                    <section class="col-xs-12">
+                        <h2>Corporate Leadership</h2>
+                        <ul class="nav nav-pills" role="tablist" id="myTabs">
+                            <li role="presentation" class="active">
+                                <a href="#peter" aria-controls="home" role="tab" data-toogle="tab">Peter Pan, CEO</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#dhanasekaran" aria-controls="profile" role="tab" data-toogle="tab">D. Witherspoon, Chief F.O.</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tang" aria-controls="messages" role="tab" data-toogle="tab">A. Tang, C.T.O.</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#somayya" aria-controls="settings" role="tab" data-toogle="tab">A. Somayya, Exec. Chef</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="peter">
+                                <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+                                <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="dhanasekaran">
+                                <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
+                                <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>           
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tang">
+                                <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
+                                <p>Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="somayya">
+                                <h3>Alberto Somayya <small>Executive Chef</small></h3>
+                                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                            </div>
+                        </div>
+                    </section>
+                     <div>
+                        <p style="padding:20px;"></p>
+                    </div>
+                </div>
+                <div class="row row-content" id="places">
+                    <section class="col-xs-12">
+                        <h2>We are at different places!</h2>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  121, Clear Water Bay Road Clear Water Bay, Hong Kong
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                The ultimate all-you-can-eat dining experience. The concept is to serve a wide variety of different cuts of meat, chicken and seafood in succession, to each diner individually right at their table, thus there is no traditional menu, as Braza features an all-you-can-eat continuous tableside service.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Kralja Aleksandra 189, Belgrage, Serbia
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                Lunch, Dinner, Accepts American Express, Accepts Mastercard, Accepts Visa, Free Wifi, Parking Available, Private Dining, Reservations, Seating, Serves Alcohol, Valet Parking, Validated Parking, Waitstaff, Wheelchair Accessible, Wine and Beer.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  189 The Grove Dr Ste Y-80 Los Angeles, CA 90036
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                No other city in the world boasts quite as eclectic a dining scene as Los Angeles. Opulent restaurants opened by celebrity chefs such as Gray Kunz and Joël Robuchon are just a stone’s throw from humble local eateries doling out thin noodles and some of the best wonton shrimp dumplings, or delicious slices of tender barbecued meat piled atop bowls of fragrant jasmine rice. One of the key lessons here is never judge a book by its cover—the most unassuming eateries are often the ones that provide the most memorable meals.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+
+               <!--     Table    -->
+
+                <div class="row row-content" id="figures">
+                    <section class="col-xs-12">
+                        <h2>Facts &amp; Figures</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                               <tr>
+                                   <td>&nbsp;</td>
+                                   <th>2013</th>
+                                   <th>2014</th>
+                                   <th>2015</th>
+                               </tr>
+                               <tr>
+                                   <th>Employees</th>
+                                   <td>15</td>
+                                   <td>30</td>
+                                   <td>40</td>
+                               </tr>
+                               <tr>
+                                   <th>Guests Served</th>
+                                   <td>15000</td>
+                                   <td>45000</td>
+                                   <td>100000</td>
+                               </tr>
+                               <tr>
+                                   <th>Special Events</th>
+                                   <td>3</td>
+                                   <td>20</td>
+                                   <td>45</td>
+                               </tr>
+                               <tr>
+                                   <th>Annual Turnover</th>
+                                   <td>$251,325</td>
+                                   <td>$1,256,326</td>
+                                   <td>-$3,000,000</td>
+                               </tr>
+                            </table>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div>
-                <p style="padding:20px;"></p>
-            </div>
+
+            <!-- Scrollspy using affix -->
+            <nav class="hidden-xs col-sm-2" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                    <li><a href="#history">Our History</a></li>
+                    <li><a href="#corporate">Corporate</a></li>
+                    <li><a href="#places">Places</a></li>
+                    <li><a href="#figures">Facts</a></li>
+                </ul>                
+            </nav>
         </div>
-
-
-        <div class="row row-content">
-            <section class="col-xs-12">
-                <h2>Corporate Leadership</h2>
-                <ul class="nav nav-pills" role="tablist" id="myTabs">
-                    <li role="presentation" class="active">
-                        <a href="#peter" aria-controls="home" role="tab" data-toogle="tab">Peter Pan, CEO</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#dhanasekaran" aria-controls="profile" role="tab" data-toogle="tab">D. Witherspoon, Chief F.O.</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#tang" aria-controls="messages" role="tab" data-toogle="tab">A. Tang, C.T.O.</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#somayya" aria-controls="settings" role="tab" data-toogle="tab">A. Somayya, Exec. Chef</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="peter">
-                        <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
-                        <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="dhanasekaran">
-                        <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
-                        <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>           
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="tang">
-                        <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
-                        <p>Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="somayya">
-                        <h3>Alberto Somayya <small>Executive Chef</small></h3>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
-                    </div>
-                </div>
-            </section>
-             <div>
-                <p style="padding:20px;"></p>
-            </div>
-       </div>
-       <div class="row row-content">
-           <section class="col-xs-12">
-               <h2>We are at different places!</h2>
-               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          121, Clear Water Bay Road Clear Water Bay, Hong Kong
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                        The ultimate all-you-can-eat dining experience. The concept is to serve a wide variety of different cuts of meat, chicken and seafood in succession, to each diner individually right at their table, thus there is no traditional menu, as Braza features an all-you-can-eat continuous tableside service.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Kralja Aleksandra 189, Belgrage, Serbia
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        Lunch, Dinner, Accepts American Express, Accepts Mastercard, Accepts Visa, Free Wifi, Parking Available, Private Dining, Reservations, Seating, Serves Alcohol, Valet Parking, Validated Parking, Waitstaff, Wheelchair Accessible, Wine and Beer.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          189 The Grove Dr Ste Y-80 Los Angeles, CA 90036
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        No other city in the world boasts quite as eclectic a dining scene as Los Angeles. Opulent restaurants opened by celebrity chefs such as Gray Kunz and Joël Robuchon are just a stone’s throw from humble local eateries doling out thin noodles and some of the best wonton shrimp dumplings, or delicious slices of tender barbecued meat piled atop bowls of fragrant jasmine rice. One of the key lessons here is never judge a book by its cover—the most unassuming eateries are often the ones that provide the most memorable meals.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-           </section>
-       </div>
-
-       <!--     Table    -->
-
-       <div class="row row-content">
-            <section class="col-xs-12">
-                <h2>Facts &amp; Figures</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover">
-                       <tr>
-                           <td>&nbsp;</td>
-                           <th>2013</th>
-                           <th>2014</th>
-                           <th>2015</th>
-                       </tr>
-                       <tr>
-                           <th>Employees</th>
-                           <td>15</td>
-                           <td>30</td>
-                           <td>40</td>
-                       </tr>
-                       <tr>
-                           <th>Guests Served</th>
-                           <td>15000</td>
-                           <td>45000</td>
-                           <td>100000</td>
-                       </tr>
-                       <tr>
-                           <th>Special Events</th>
-                           <td>3</td>
-                           <td>20</td>
-                           <td>45</td>
-                       </tr>
-                       <tr>
-                           <th>Annual Turnover</th>
-                           <td>$251,325</td>
-                           <td>$1,256,326</td>
-                           <td>-$3,000,000</td>
-                       </tr>
-                    </table>
-                </div>
-            </section>
-       </div>
-
     </div>
-
     <footer class="row-footer">
         <div class="container">
             <div class="row">             
