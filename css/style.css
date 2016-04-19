@@ -1,5 +1,5 @@
 .navbar-fixed-top > .container-fluid {
-	background-color: #A7A37E;
+	background-color: #E6E2AF;
 
 }
 .navbar-header button, .navbar-brand, #mainNavbar,
@@ -8,7 +8,7 @@
 } 
 
 .blueColor{
-	color:#A7A37E !important;
+	color:#FFFFCC !important;
 	text-shadow:#474747 2px 2px 4px;
 
 }
