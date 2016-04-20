@@ -20,57 +20,78 @@
 </head>
 
 <body>
-    <nav class="navbar-fixed-top navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
+    <header>
+        <nav class="navbar-fixed-top navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">Menu</button>
-                <a class="navbar-brand" href="index.html"><img src="img/fusionlogo.png" alt="fusion logo navigating to homepage" title="Fusion Logo" height="25"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">Menu</button>
+                    <a class="navbar-brand" href="index.html"><img src="img/fusionlogo.png" alt="fusion logo navigating to homepage" title="Fusion Logo" height="25"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                        <li><a href="aboutUs.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                             role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> 
+                              Menu 
+                             <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Appetizers</a></li>
+                                <li><a href="#">Main Courses</a></li>
+                                <li><a href="#">Desserts</a></li>
+                                <li><a href="#">Drinks</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Specials</li>
+                                <li><a href="#">Lunch Buffet</a></li>
+                                <li><a href="#">Weekend Brunch</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="contactus.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+                    </ul>
+                    <!-- Login button that opens the modal -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-                    <li><a href="aboutUs.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                         role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> 
-                          Menu 
-                         <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Appetizers</a></li>
-                            <li><a href="#">Main Courses</a></li>
-                            <li><a href="#">Desserts</a></li>
-                            <li><a href="#">Drinks</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Specials</li>
-                            <li><a href="#">Lunch Buffet</a></li>
-                            <li><a href="#">Weekend Brunch</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="contactus.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search" method="post">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" name="email">
-                        <input type="password" class="form-control" placeholder="Password" name="password">
-                        <label class="checkbox">
-                            <input type="checkbox" class="form-control" name="rememberme"> Remember Me
-                        </label>
-                        <input type="submit" value="Sign in" class="btn btn-primary" name="signin">
-                    </div>
+        </nav>
 
-                </form>
-                <!-- <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul> -->
+        <!-- Modal -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Login </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email">
+                                <input type="password" class="form-control" placeholder="Password" name="password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="rememberme"> Remember Me
+                                </label>
+                            </div>
+                            <br><br>
+                            <input type="submit" value="Sign in" class="btn btn-primary btn-sm" name="signin">
+                            <button type="button" class="btn btn-default btn-sm"
+                   data-dismiss="modal">Cancel</button>
+                            
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <header class="jumbotron">
-
-        <!-- Main component for a primary marketing message or call to action -->
-
+    </header>
+    <div class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12 col-sm-2 col-sm-push-9">
@@ -84,7 +105,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="container">
         <div class="row row-content-breadcrumbs">
