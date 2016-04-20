@@ -126,7 +126,7 @@
                 </ol>
             </div>
             <div class="col-xs-12 col-sm-3">
-                <a class="btn btn-warning btn-block" href="#scroll" role="button" title="Click here to make a reservation.">Reserve Table</a>
+                <a class="btn btn-warning btn-block" href="#scroll" role="button" data-toggle="tooltip" data-placement="top" title="Or Call us at +381 60 3881925.">Reserve Table</a>
             </div>
         </div>
         <section class="row row-content">
@@ -330,6 +330,10 @@
           arrows : false,
           dots : true
         });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
     </script>
 </body>
 </html>
