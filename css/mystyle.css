@@ -1,0 +1,113 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  color: #fff;
+  background-color: #046380;
+}
+.navbar-fixed-top > .container-fluid {
+  background-color: #e6e2af;
+}
+.navbar-header button,
+.navbar-brand,
+#mainNavbar,
+.dropdown-menu a,
+.navbar-nav a {
+  color: #002F2F !important;
+}
+.borderRadius {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.row-content-breadcrumbs {
+  padding-top: 10px;
+}
+.jumbotron {
+  padding: 45px 30px 70px 30px;
+  margin: 40px auto 0px auto;
+  background-color: #046380;
+  color: #FFFAF0;
+}
+footer address {
+  font-size: 80%;
+  margin: 0px;
+  color: #EFECCA;
+}
+.navbar-header button {
+  color: #7986cb;
+}
+.row-footer .list-unstyled li a,
+footer address a {
+  color: #EFECCA;
+}
+#test {
+  border: solid red 1px;
+}
+#test2 {
+  border: solid blue 1px;
+}
+/* PARALLAX*/
+.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallaxPic {
+  background-image: url("../img/food.jpg");
+}
+.textOnParallax {
+  color: #FFFFCC !important;
+  text-shadow: #474747 2px 2px 4px;
+}
+.center {
+  text-align: center;
+}
+.tab-pane {
+  border-radius: 0px 0px 20px 20px;
+  border: solid #e6e6e6 1px;
+  padding: 0 10px;
+  background-color: #fafafa;
+}
+.affix {
+  top: 120px;
+}
+/* Carousel bootstrap / contactus.html*/
+.carousel {
+  margin-top: 50px;
+}
+.carousel-caption {
+  color: #046380;
+  text-shadow: #474747 2px 2px 4px;
+}
+.carousel-indicators .active {
+  background-color: #046380;
+}
+#carouselButtons {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+@media (max-width: 600px) {
+  .carousel-caption,
+  .carousel-indicators {
+    display: none;
+  }
+  #carouselButtons {
+    display: none;
+  }
+}
+/* Carousel END*/

@@ -1,5 +1,36 @@
+// Colors
+@dark-ivory: #e6e2af;
+@footer-color: #046380;
+@footer-font-color: #EFECCA;
+@white-color: #fff;
+
+// Height variables
+@affix-top: 120px;
+
+
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin: 0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+	.zero-margin();
+}
+
+.row-content {
+	.zero-margin(50px, 0px);
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.row-footer {
+	.zero-margin(20px, 0px);
+	color: @white-color;
+	background-color: @footer-color;
+}
+
 .navbar-fixed-top > .container-fluid {
-	background-color: #E6E2AF;
+	background-color: @dark-ivory;
 
 }
 .navbar-header button, .navbar-brand, #mainNavbar,
@@ -9,7 +40,6 @@
 
 .borderRadius{
 	border-radius: 25px;
-    /*padding: 20px; */
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -17,51 +47,28 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-	/*border: solid red 2px;*/
-}
-
-.row-header {
-	margin: 0px auto;
-}
-
-.row-content {
-	margin: 0px auto;
-	padding: 50px 0px;
-	border-bottom: 1px ridge;
-	min-height: 400px;
-}
-
 .row-content-breadcrumbs{
 	padding-top: 10px;
 
 }
 
-.row-footer {
-	color: #fff;
-	background-color: #046380;
-	margin: 0px auto;
-	padding: 20px 0px 20px 0px;
-	
-}
-
 .jumbotron {
 	padding: 45px 30px 70px 30px;
 	margin: 40px auto 0px auto;
-	background-color: #046380;
+	background-color: @footer-color;
 	color: #FFFAF0;
 }
 
 footer address {
 	font-size: 80%;
 	margin: 0px;
-	color: #EFECCA;
+	color: @footer-font-color;
 }
 .navbar-header button {
 	color:#7986cb;
 }
 .row-footer .list-unstyled li a, footer address a {
-	color: #EFECCA;
+	color: @footer-font-color;
 }
 
 #test {
@@ -105,6 +112,7 @@ footer address {
 .affix {
 	top: 120px;
 }
+
 /* Carousel bootstrap / contactus.html*/
 
 .carousel {
@@ -112,11 +120,11 @@ footer address {
 }
 
 .carousel-caption{
-	color: #046380;
+	color: @footer-color;
 	text-shadow:#474747 2px 2px 4px;
 }
 .carousel-indicators .active {
-	background-color: #046380;
+	background-color: @footer-color;
 }
 
 #carouselButtons {
