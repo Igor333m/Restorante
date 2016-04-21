@@ -7,11 +7,6 @@
 	color: #002F2F !important;
 } 
 
-.textOnParallax{
-	color:#FFFFCC !important;
-	text-shadow:#474747 2px 2px 4px;
-
-}
 .borderRadius{
 		border-radius: 25px;
     /*padding: 20px; */
@@ -90,6 +85,12 @@ footer address {
    background-image: url("../img/food.jpg");
 }
 
+.textOnParallax{
+	color:#FFFFCC !important;
+	text-shadow:#474747 2px 2px 4px;
+
+}
+
 .center{
 	text-align: center;
 }
@@ -104,3 +105,23 @@ footer address {
 .affix {
 	top: 120px;
 }
+/* Carousel*/
+
+.carousel {
+	margin-top: 50px;
+}
+
+.carousel-caption{
+	color: #046380;
+	text-shadow:#474747 2px 2px 4px;
+}
+.carousel-indicators .active {
+	background-color: #046380;
+}
+
+@media (max-width: 600px) {
+	.carousel-caption, .carousel-indicators {
+		display: none;
+	}
+}
+/* Carousel END*/
