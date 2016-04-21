@@ -119,6 +119,12 @@ footer address {
 	background-color: #046380;
 }
 
+#carouselButtons {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
 @media (max-width: 600px) {
 	.carousel-caption, .carousel-indicators {
 		display: none;
