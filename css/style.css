@@ -129,5 +129,9 @@ footer address {
 	.carousel-caption, .carousel-indicators {
 		display: none;
 	}
+
+	#carouselButtons {
+		display: none;
+	}
 }
 /* Carousel END*/
