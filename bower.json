@@ -1,28 +1,32 @@
 {
-  "name": "conFusion",
+  "name": "restorante",
   "homepage": "https://github.com/Igor333m/Restorante",
   "authors": [
     "Igor Todorovic <igor333m@yahoo.com>"
   ],
-  "description": "Website for an awesome restaurant",
+  "description": "famous restaurant",
   "main": "index.html",
   "keywords": [
-    "Restaurant",
-    "good",
+    "restaurant",
+    "belgrade",
+    "hong",
+    "kong",
+    "los",
+    "angeles",
+    "famous",
+    "indian",
     "food",
-    "great",
-    "food"
+    "italian"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
+    "angular": "^1.5.5",
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.1"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.6.1",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5"
   }
 }
