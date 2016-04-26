@@ -24,19 +24,6 @@
 .navbar-nav a {
   color: #002F2F !important;
 }
-
-// Background color for nav button
-/* .navbar-nav > .active > a{
-  color: #fff;
-  background: #046380 !important;
-
-}
-
-.navbar-nav .dropdown:active {
-  border: solid blue 1px;
-  background: #046380 !important;
-} */
-
 .borderRadius {
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -124,3 +111,6 @@ footer address a {
   }
 }
 /* Carousel END*/
+textarea {
+  width: 100%;
+}
