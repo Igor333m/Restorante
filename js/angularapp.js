@@ -46,6 +46,15 @@
                    price:'2.99',
                    description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
                    comment: ''
+                },
+                {
+                   name:'Sarma',
+                   image: 'img/sarma.jpg',
+                   category: 'main',
+                   label:'Top Rated',
+                   price:'10.99',
+                   description:"Sarma is a dish of grape, cabbage, monk's rhubarb or chard leaves rolled around a filling usually based on minced meat, or a sweet dish of filo dough wrapped around a filling often of various kinds of chopped nuts. It is found in the cuisines of the former Ottoman Empire from the Middle East to the Balkans and Central Europe.",
+                   comment: ''
                 }
     ];
 
