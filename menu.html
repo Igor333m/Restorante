@@ -115,24 +115,40 @@
     <div class="container">
         <div class="row row-content" ng-controller="menuController as menuCtrl"> <!-- menuCtrl is alias -->
             <div class="col-xs-12">
-                <ul class="media-list">
-                    <li class="media" ng-repeat="dish in menuCtrl.dishes">
-                        <div class="media-left media-top">
-                            <a href="#"><img ng-src="{{dish.image}}" alt="Uthapizza" title="Uthapizza" class="media-object img-thumbnail"></a>
-                        </div>
-                        <div class="media-body">
-                            <h2 class="media-heading">{{dish.name}}
-                            <span class="label label-danger">{{dish.label}}</span>
-                            <span class="badge">{{dish.price | currency}}</span>
-                            </h2>
-                            <p>{{dish.description}}</p>
-                            <p>Comments: {{dish.comment}}</p>
-                            <p>Type your comment:</p>
-                            <textarea type="text" ng-model="dish.comment"></textarea>
-                        </div>
-                        <hr>
-                    </li>
-                </ul>
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" ng-class="{active:menuCtrl.isSelected(1)}"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" ng-click="menuCtrl.select(1)">The Menu</a></li>
+                        <li role="presentation" ng-class="{active:menuCtrl.isSelected(2)}"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" ng-click="menuCtrl.select(2)">Appetizers</a></li>
+                        <li role="presentation" ng-class="{active:menuCtrl.isSelected(3)}"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" ng-click="menuCtrl.select(3)">Mains</a></li>
+                        <li role="presentation"ng-class="{active:menuCtrl.isSelected(4)}"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" ng-click="menuCtrl.select(4)">Desserts</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                    <div class="tab-content">
+                        
+                        <!-- Angular Objects -->
+                        <ul class="media-list tab-pane fade in active">
+                            <li class="media" ng-repeat="dish in menuCtrl.dishes | filter:menuCtrl.filtText">
+                                <div class="media-left media-top">
+                                    <a href="#"><img ng-src="{{dish.image}}" alt="Uthapizza" title="Uthapizza" class="media-object img-thumbnail"></a>
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="media-heading">{{dish.name}}
+                                    <span class="label label-danger">{{dish.label}}</span>
+                                    <span class="badge">{{dish.price | currency}}</span>
+                                    </h2>
+                                    <p>{{dish.description}}</p>
+                                    <!-- Comments removed, later it will be added -->
+                                    <!-- <p>Comments: {{dish.comment}}</p>
+                                    <p>Type your comment:</p>
+                                    <textarea type="text" ng-model="dish.comment"></textarea> -->
+                                </div>
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

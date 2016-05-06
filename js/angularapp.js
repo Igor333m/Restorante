@@ -5,7 +5,7 @@
                  {
                    name:'Uthapizza',
                    image: 'img/uthappizza.png',
-                   category: 'mains',
+                   category: 'main',
                    label:'Hot',
                    price:'4.99',
                    description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
@@ -61,7 +61,27 @@
     var app = angular.module('confusionApp', []);
     
 	app.controller('menuController', function (){
-	       this.dishes = dishes;
+	      this.dishes = dishes;
+        this.filtText = '';
+        this.tab = 1;
+        this.select = (function(setTab) {
+        this.tab = setTab;
+        this.select = function(setTab) {
+                this.tab = setTab;
+
+                if (setTab === 2)
+                    this.filtText = "appetizer";
+                else if (setTab === 3)
+                    this.filtText = "main";
+                else if (setTab === 4)
+                    this.filtText = "dessert";
+                else
+                    this.filtText = "";
+            }
+        this.isSelected = function (checkTab) {
+          return (this.tab === checkTab);
+        }
+         });
 	});
 
 })();
