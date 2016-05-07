@@ -55,6 +55,15 @@
                    price:'10.99',
                    description:"Sarma is a dish of grape, cabbage, monk's rhubarb or chard leaves rolled around a filling usually based on minced meat, or a sweet dish of filo dough wrapped around a filling often of various kinds of chopped nuts. It is found in the cuisines of the former Ottoman Empire from the Middle East to the Balkans and Central Europe.",
                    comment: ''
+                },
+                {
+                   name:'Baklava',
+                   image: 'img/baklava.jpg',
+                   category: 'dessert',
+                   label:'',
+                   price:'4',
+                   description:"Baklava is a rich, sweet pastry made of layers of filo/phyllo dough filled with chopped nuts and sweetened and held together with syrup or honey. It is characteristic of the cuisines of the former Ottoman Empire, and is also found in Central and West Asia.",
+                   comment: ''
                 }
     ];
 
