@@ -124,3 +124,9 @@ div.well {
   background-image: linear-gradient(to bottom, #337ab7 0, #337ab7 100%);
   color: #fff;
 }
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #337ab7 !important;
+  color: #fff;
+}
