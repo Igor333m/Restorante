@@ -131,7 +131,7 @@
                         <ul class="media-list tab-pane fade in active">
                             <li class="media" ng-repeat="dish in menuCtrl.dishes | filter:menuCtrl.filtText">
                                 <div class="media-left media-top">
-                                    <a href="#"><img ng-src="{{dish.image}}" alt="Uthapizza" title="Uthapizza" class="media-object img-thumbnail"></a>
+                                    <a href="#"><img ng-src="{{dish.image}}" alt="{{dish.name}}" title="{{dish.name}}" class="media-object img-thumbnail"></a>
                                 </div>
                                 <div class="media-body">
                                     <h2 class="media-heading">{{dish.name}}
