@@ -150,11 +150,16 @@ textarea {
 	width: 100%;
 }
 
-// Used for changing style of a table on aboutus.html
+// Used for changing style of a table and well on aboutus.html
 tr:nth-child(odd) {
 	background-color: @light-ivory !important;
 }
 
 div.well {
 	background-image: linear-gradient(to bottom,@light-ivory 0,#ffffdd 100%);
+}
+
+.panel-default > .panel-heading {
+	background-image: linear-gradient(to bottom,@brand-primary 0,@brand-primary 100%);
+	color: @white-color;
 }

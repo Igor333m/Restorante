@@ -120,3 +120,7 @@ tr:nth-child(odd) {
 div.well {
   background-image: linear-gradient(to bottom, #ffffcc 0, #ffffdd 100%);
 }
+.panel-default > .panel-heading {
+  background-image: linear-gradient(to bottom, #337ab7 0, #337ab7 100%);
+  color: #fff;
+}
