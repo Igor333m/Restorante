@@ -70,7 +70,7 @@ footer address a {
   background-image: url("../img/food.jpg");
 }
 .textOnParallax {
-  color: #FFFFCC !important;
+  color: #ffffcc !important;
   text-shadow: #474747 2px 2px 4px;
 }
 .center {
@@ -113,4 +113,10 @@ footer address a {
 /* Carousel END*/
 textarea {
   width: 100%;
+}
+tr:nth-child(odd) {
+  background-color: #ffffcc !important;
+}
+div.well {
+  background-image: linear-gradient(to bottom, #ffffcc 0, #ffffdd 100%);
 }

@@ -1,8 +1,10 @@
 // Colors
 @dark-ivory: #e6e2af;
+@light-ivory: #ffffcc;
 @footer-color: #046380;
 @footer-font-color: #EFECCA;
 @white-color: #fff;
+@brand-primary: darken(#428bca, 6.5%);
 
 // Height variables
 @affix-top: 120px;
@@ -93,7 +95,7 @@ footer address {
 }
 
 .textOnParallax{
-	color:#FFFFCC !important;
+	color:@light-ivory !important;
 	text-shadow:#474747 2px 2px 4px;
 
 }
@@ -146,4 +148,13 @@ footer address {
 
 textarea {
 	width: 100%;
+}
+
+// Used for changing style of a table on aboutus.html
+tr:nth-child(odd) {
+	background-color: @light-ivory !important;
+}
+
+div.well {
+	background-image: linear-gradient(to bottom,@light-ivory 0,#ffffdd 100%);
 }
