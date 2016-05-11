@@ -135,7 +135,9 @@
                                 </div>
                                 <div class="media-body">
                                     <h2 class="media-heading">{{dish.name}}
-                                    <span class="label label-danger">{{dish.label}}</span>
+                                    <h4>
+                                        <span class="label label-danger">{{dish.label | uppercase}}</span>
+                                    </h4>
                                     <span class="badge">{{dish.price | currency}}</span>
                                     </h2>
                                     <p>{{dish.description}}</p>

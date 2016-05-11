@@ -130,3 +130,7 @@ div.well {
   background-color: #337ab7 !important;
   color: #fff;
 }
+.media-body > h4,
+h2.media-heading {
+  display: inline;
+}
