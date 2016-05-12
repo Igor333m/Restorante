@@ -9,28 +9,50 @@
 // Height variables
 @affix-top: 120px;
 
-// Github button
+// Left side fixed buttons
 #gitButtonDiv{
-	position: absolute;
+	position: fixed;
 	margin-top: 25rem;
 	margin-left: -110px;
 	padding-left: 0.5rem;
-	background-color: #444;
+	background-color: @dark-ivory;
 	border-radius: 0px 5px 5px 0;
 	-webkit-transition: margin-left 2s; /* For Safari 3.1 to 6.0 */
     transition: margin-left 2s;
-
+	z-index: 5;
 }
 #gitButtonDiv span {
-	color: @white-color;
+	color: @footer-color;
 }
 #gitButtonDiv:hover {
 	margin-left: 0px;
 }
 #githubButton{
-	z-index: 100;
+	z-index: 10;
 }
 
+#linkedinButtonDiv{
+	position: fixed;
+	margin-top: 30rem;
+	margin-left: -122px;
+	padding-left: 0.5rem;
+	background-color: @dark-ivory;
+	border-radius: 0px 5px 5px 0;
+	-webkit-transition: margin-left 2s; /* For Safari 3.1 to 6.0 */
+    transition: margin-left 2s;
+    z-index: 5;
+
+}
+#linkedinButtonDiv span {
+	color: @footer-color;
+}
+#linkedinButtonDiv:hover {
+	margin-left: 0px;
+}
+#linkedinButton{
+	z-index: 10;
+}
+// End of fixed buttons
 
 .zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
 	margin: 0px auto;

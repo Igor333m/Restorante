@@ -1,22 +1,44 @@
 #gitButtonDiv {
-  position: absolute;
+  position: fixed;
   margin-top: 25rem;
   margin-left: -110px;
   padding-left: 0.5rem;
-  background-color: #444;
+  background-color: #e6e2af;
   border-radius: 0px 5px 5px 0;
   -webkit-transition: margin-left 2s;
   /* For Safari 3.1 to 6.0 */
   transition: margin-left 2s;
+  z-index: 5;
 }
 #gitButtonDiv span {
-  color: #fff;
+  color: #046380;
 }
 #gitButtonDiv:hover {
   margin-left: 0px;
 }
 #githubButton {
-  z-index: 100;
+  z-index: 10;
+}
+#linkedinButtonDiv {
+  position: fixed;
+  margin-top: 30rem;
+  margin-left: -122px;
+  padding-left: 0.5rem;
+  background-color: #e6e2af;
+  border-radius: 0px 5px 5px 0;
+  -webkit-transition: margin-left 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: margin-left 2s;
+  z-index: 5;
+}
+#linkedinButtonDiv span {
+  color: #046380;
+}
+#linkedinButtonDiv:hover {
+  margin-left: 0px;
+}
+#linkedinButton {
+  z-index: 10;
 }
 .row-header {
   margin: 0px auto;
