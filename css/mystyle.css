@@ -1,3 +1,23 @@
+#gitButtonDiv {
+  position: absolute;
+  margin-top: 25rem;
+  margin-left: -110px;
+  padding-left: 0.5rem;
+  background-color: #444;
+  border-radius: 0px 5px 5px 0;
+  -webkit-transition: margin-left 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: margin-left 2s;
+}
+#gitButtonDiv span {
+  color: #fff;
+}
+#gitButtonDiv:hover {
+  margin-left: 0px;
+}
+#githubButton {
+  z-index: 100;
+}
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
