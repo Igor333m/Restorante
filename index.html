@@ -96,6 +96,24 @@
                 </div>
             </div>
         </div>
+        <!-- In conststuction modal -->
+        <div id="inConstruction" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Under Construction! </h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-primary">This site is under construction. Do not afraid of bugs!</h1>
+                        <button type="button" class="btn btn-default btn-sm"
+                       data-dismiss="modal">Cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="jumbotron">
         <div class="container">
@@ -347,6 +365,7 @@
     <script src="js/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
     <script>
+        $('#inConstruction').modal('show');
         $(".slicky").slick({
           fade : true,
           autoplay : false,
