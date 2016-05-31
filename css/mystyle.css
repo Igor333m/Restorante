@@ -1,3 +1,4 @@
+/* Left side fixed buttons for GIT and Linkedin */
 #gitButtonDiv {
   position: fixed;
   margin-top: 25rem;
@@ -40,6 +41,9 @@
 #linkedinButton {
   z-index: 10;
 }
+/* End of fixed buttons */
+
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -100,6 +104,7 @@ footer address a {
 #test2 {
   border: solid blue 1px;
 }
+
 /* PARALLAX*/
 .parallax {
   height: 400px;
@@ -127,7 +132,8 @@ footer address a {
 .affix {
   top: 120px;
 }
-/* Carousel bootstrap / contactus.html*/
+
+/* Carousel bootstrap / contactus.html */
 .carousel {
   margin-top: 50px;
 }
@@ -156,12 +162,14 @@ footer address a {
 textarea {
   width: 100%;
 }
+/* Used for changing style of a table and well on aboutus.html */
 tr:nth-child(odd) {
   background-color: #ffffcc !important;
 }
 div.well {
   background-image: linear-gradient(to bottom, #ffffcc 0, #ffffdd 100%);
 }
+/* Change the panel heading color to primary */
 .panel-default > .panel-heading {
   background-image: linear-gradient(to bottom, #337ab7 0, #337ab7 100%);
   color: #fff;
@@ -172,6 +180,7 @@ div.well {
   background-color: #337ab7 !important;
   color: #fff;
 }
+/* This put label and label-pill after text in same line in menu.html */
 .media-body > h4,
 h2.media-heading {
   display: inline;
